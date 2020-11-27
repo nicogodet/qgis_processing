@@ -1,0 +1,275 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:dissolve_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:dissolve" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="320" name="component_pos_x"/>
+        <Option type="double" value="115" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Regrouper" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="122" name="component_pos_x"/>
+      <Option type="double" value="218" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:dissolve_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD">
+          <Option type="Map">
+            <Option type="QString" value="Champsutiliserpourregrouper" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="native:fixgeometries_2" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:fixgeometries_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:fixgeometries" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="540" name="component_pos_x"/>
+        <Option type="double" value="303" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Réparer les géométries" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="117" name="component_pos_x"/>
+      <Option type="double" value="387" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:fixgeometries_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Couche traitée">
+          <Option type="QString" value="native:fixgeometries_1" name="child_id"/>
+          <Option type="QString" value="" name="color"/>
+          <Option type="Map" name="comment">
+            <Option type="QString" value="" name="color"/>
+            <Option type="QString" value="" name="component_description"/>
+            <Option type="double" value="60" name="component_height"/>
+            <Option type="double" value="0" name="component_pos_x"/>
+            <Option type="double" value="0" name="component_pos_y"/>
+            <Option type="double" value="100" name="component_width"/>
+            <Option type="bool" value="true" name="outputs_collapsed"/>
+            <Option type="bool" value="true" name="parameters_collapsed"/>
+          </Option>
+          <Option type="QString" value="Couche traitée" name="component_description"/>
+          <Option type="double" value="30" name="component_height"/>
+          <Option type="double" value="400" name="component_pos_x"/>
+          <Option type="double" value="359" name="component_pos_y"/>
+          <Option type="double" value="200" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Couche traitée" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
+          <Option type="bool" value="true" name="outputs_collapsed"/>
+          <Option type="bool" value="true" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="native:multiparttosingleparts_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:fixgeometries_2">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:fixgeometries" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="540" name="component_pos_x"/>
+        <Option type="double" value="387" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Réparer les géométries 1" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="124" name="component_pos_x"/>
+      <Option type="double" value="115" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:fixgeometries_2" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="Couchetraiter" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:multiparttosingleparts_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:multiparttosingleparts" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="540" name="component_pos_x"/>
+        <Option type="double" value="215" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="De morceaux multiples à morceaux uniques" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="117" name="component_pos_x"/>
+      <Option type="double" value="303" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:multiparttosingleparts_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="native:dissolve_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" value="Traitement topologique" name="model_group"/>
+  <Option type="QString" value="Collecter-simplePartie-vérifier" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="Champsutiliserpourregrouper">
+      <Option type="bool" value="true" name="allow_multiple"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="QString" value="" name="default"/>
+      <Option type="bool" value="false" name="default_to_all_fields"/>
+      <Option type="QString" value="Champ(s) de regroupement" name="description"/>
+      <Option type="int" value="8" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="Champsutiliserpourregrouper" name="name"/>
+      <Option type="QString" value="field" name="parameter_type"/>
+      <Option type="QString" value="Couchetraiter" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="Couchetraiter">
+      <Option type="List" name="data_types">
+        <Option type="int" value="-1"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Couche à traiter" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="Couchetraiter" name="name"/>
+      <Option type="QString" value="vector" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="VERBOSE_LOG">
+      <Option type="bool" value="false" name="default"/>
+      <Option type="QString" value="Verbose logging" name="description"/>
+      <Option type="int" value="12" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="VERBOSE_LOG" name="name"/>
+      <Option type="QString" value="boolean" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="native:fixgeometries_1:Couche traitée">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Couche traitée" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="native:fixgeometries_1:Couche traitée" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="true" name="supports_append"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="StringList" name="parameterOrder">
+    <Option type="QString" value="Couchetraiter"/>
+    <Option type="QString" value="Champsutiliserpourregrouper"/>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="Champsutiliserpourregrouper">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="540" name="component_pos_x"/>
+        <Option type="double" value="15" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Champsutiliserpourregrouper" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="404" name="component_pos_x"/>
+      <Option type="double" value="60" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="Champsutiliserpourregrouper" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Couchetraiter">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="320" name="component_pos_x"/>
+        <Option type="double" value="15" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Couchetraiter" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="120" name="component_pos_x"/>
+      <Option type="double" value="60" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="Couchetraiter" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>

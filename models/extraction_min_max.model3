@@ -1,0 +1,419 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:convertformat_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:convertformat"/>
+      <Option name="component_description" type="QString" value="Conversion de format"/>
+      <Option name="component_pos_x" type="double" value="495"/>
+      <Option name="component_pos_y" type="double" value="517"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:convertformat_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Fichier résultat CSV (ID,X,Y,&lt;MatriceMax>)" type="Map">
+          <Option name="child_id" type="QString" value="gdal:convertformat_1"/>
+          <Option name="component_description" type="QString" value="Fichier résultat CSV (ID,X,Y,&lt;MatriceMax>)"/>
+          <Option name="component_pos_x" type="double" value="722"/>
+          <Option name="component_pos_y" type="double" value="559"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Fichier résultat CSV (ID,X,Y,&lt;MatriceMax>)"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="saga:rasterstatisticsforpolygons_1"/>
+            <Option name="output_name" type="QString" value="RESULT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="-lco NAME=VALUE"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:buffer_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:buffer"/>
+      <Option name="component_description" type="QString" value="Tampon"/>
+      <Option name="component_pos_x" type="double" value="510"/>
+      <Option name="component_pos_y" type="double" value="271"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:buffer_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="DISSOLVE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="DISTANCE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="1"/>
+          </Option>
+        </Option>
+        <Option name="END_CAP_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:refactorfields_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="JOIN_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="MITER_LIMIT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="2"/>
+          </Option>
+        </Option>
+        <Option name="SEGMENTS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:splitlinesbylength_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:splitlinesbylength"/>
+      <Option name="component_description" type="QString" value="Division des lignes par longueur maximale"/>
+      <Option name="component_pos_x" type="double" value="132"/>
+      <Option name="component_pos_y" type="double" value="234"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:splitlinesbylength_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="couchedeslinairestraiter"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="LENGTH" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="crationdepointstamponstouslesxmtreslelongdulinaire"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:transect_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:transect"/>
+      <Option name="component_description" type="QString" value="Transect"/>
+      <Option name="component_pos_x" type="double" value="331"/>
+      <Option name="component_pos_y" type="double" value="337"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:transect_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="ANGLE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="90"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:splitlinesbylength_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="LENGTH" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value=" @distancetamponappliquerpeuttreunlgerchevauchement *2"/>
+            <Option name="source" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="SIDE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="2"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:refactorfields_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:refactorfields"/>
+      <Option name="component_description" type="QString" value="Refactoriser les champs"/>
+      <Option name="component_pos_x" type="double" value="207"/>
+      <Option name="component_pos_y" type="double" value="436"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:refactorfields_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" type="QString" value=" $id +1"/>
+                <Option name="length" type="int" value="11"/>
+                <Option name="name" type="QString" value="ID"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="type" type="int" value="2"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="$X"/>
+                <Option name="length" type="int" value="11"/>
+                <Option name="name" type="QString" value="X"/>
+                <Option name="precision" type="int" value="2"/>
+                <Option name="type" type="int" value="6"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="$Y"/>
+                <Option name="length" type="int" value="11"/>
+                <Option name="name" type="QString" value="Y"/>
+                <Option name="precision" type="int" value="2"/>
+                <Option name="type" type="int" value="6"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:transect_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:rasterstatisticsforpolygons_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="saga:rasterstatisticsforpolygons"/>
+      <Option name="component_description" type="QString" value="Raster statistics for polygons"/>
+      <Option name="component_pos_x" type="double" value="499"/>
+      <Option name="component_pos_y" type="double" value="420"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="saga:rasterstatisticsforpolygons_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Shapefile tampon généré en cas de besoin" type="Map">
+          <Option name="child_id" type="QString" value="saga:rasterstatisticsforpolygons_1"/>
+          <Option name="component_description" type="QString" value="Shapefile tampon généré en cas de besoin"/>
+          <Option name="component_pos_x" type="double" value="723"/>
+          <Option name="component_pos_y" type="double" value="467"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Shapefile tampon généré en cas de besoin"/>
+          <Option name="output_name" type="QString" value="RESULT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COUNT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="MatriceMNT"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="MAX" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="MEAN" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="MIN" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="NAMING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:buffer_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="QUANTILE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="RANGE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="STDDEV" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="SUM" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+        <Option name="VAR" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" type="QString" value="Traitement topographique"/>
+  <Option name="model_name" type="QString" value="Extraction de IDXYZmax de points-tampons créés le long de polyligne(s) tous les x mètres NGO"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="MatriceMNT" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Matrice MNT"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="MatriceMNT"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="couchedeslinairestraiter" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Couche des linéaires à traiter :"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="couchedeslinairestraiter"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="crationdepointstamponstouslesxmtreslelongdulinaire" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="5.0"/>
+      <Option name="description" type="QString" value="Création de points-tampons tous les x mètres le long du linéaire :"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="1000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="0"/>
+      <Option name="name" type="QString" value="crationdepointstamponstouslesxmtreslelongdulinaire"/>
+      <Option name="parameter_type" type="QString" value="number"/>
+    </Option>
+    <Option name="distancetamponappliquerpeuttreunlgerchevauchement" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="2.51"/>
+      <Option name="description" type="QString" value="Distance Tampon (appliquer peut-être un léger chevauchement???) :"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="1000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="0"/>
+      <Option name="name" type="QString" value="distancetamponappliquerpeuttreunlgerchevauchement"/>
+      <Option name="parameter_type" type="QString" value="number"/>
+    </Option>
+    <Option name="gdal:convertformat_1:Fichier résultat CSV (ID,X,Y,&lt;MatriceMax>)" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Fichier résultat CSV (ID,X,Y,&lt;MatriceMax>)"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:convertformat_1:Fichier résultat CSV (ID,X,Y,&lt;MatriceMax>)"/>
+      <Option name="parameter_type" type="QString" value="vectorDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="saga:rasterstatisticsforpolygons_1:Shapefile tampon généré en cas de besoin" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Shapefile tampon généré en cas de besoin"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="saga:rasterstatisticsforpolygons_1:Shapefile tampon généré en cas de besoin"/>
+      <Option name="parameter_type" type="QString" value="vectorDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="MatriceMNT" type="Map">
+      <Option name="component_description" type="QString" value="MatriceMNT"/>
+      <Option name="component_pos_x" type="double" value="780"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="name" type="QString" value="MatriceMNT"/>
+    </Option>
+    <Option name="couchedeslinairestraiter" type="Map">
+      <Option name="component_description" type="QString" value="couchedeslinairestraiter"/>
+      <Option name="component_pos_x" type="double" value="120"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="name" type="QString" value="couchedeslinairestraiter"/>
+    </Option>
+    <Option name="crationdepointstamponstouslesxmtreslelongdulinaire" type="Map">
+      <Option name="component_description" type="QString" value="crationdepointstamponstouslesxmtreslelongdulinaire"/>
+      <Option name="component_pos_x" type="double" value="340"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="name" type="QString" value="crationdepointstamponstouslesxmtreslelongdulinaire"/>
+    </Option>
+    <Option name="distancetamponappliquerpeuttreunlgerchevauchement" type="Map">
+      <Option name="component_description" type="QString" value="distancetamponappliquerpeuttreunlgerchevauchement"/>
+      <Option name="component_pos_x" type="double" value="560"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="name" type="QString" value="distancetamponappliquerpeuttreunlgerchevauchement"/>
+    </Option>
+  </Option>
+</Option>

@@ -1,0 +1,6 @@
+__pycache__
+rscripts/
+rlibs/
+outputs/
+processing.log
+saga_batch_job.bat
