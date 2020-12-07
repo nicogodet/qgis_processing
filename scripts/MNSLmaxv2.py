@@ -244,6 +244,8 @@ class MnslmaxV2(QgsProcessingAlgorithm):
             "gdal",
         )
         QgsProject.instance().addMapLayer(rlayer)
+        
+        return {}
     
     # Autres fonctions
 
