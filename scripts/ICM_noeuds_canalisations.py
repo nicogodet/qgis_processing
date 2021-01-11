@@ -119,12 +119,12 @@ class AssignationDesNoeudsAuxCanalisations(QgsProcessingAlgorithm):
             
             if featCana.geometry().isMultipart():
                 if len(featCana.geometry().asMultiPolyline()[0]) > 2:
-                    feedback.pushInfo('La canalisation {} contient un ou plusieurs sommet(s) intermédiaire(s).'.format(featCana.id()))
+                    feedback.pushWarning('La canalisation {} contient un ou plusieurs sommet(s) intermédiaire(s).'.format(featCana.id()))
                 canaNoeudAmont = QgsGeometry.fromPointXY(featCana.geometry().asMultiPolyline()[0][0])
                 canaNoeudAval = QgsGeometry.fromPointXY(featCana.geometry().asMultiPolyline()[0][-1])
             else:
                 if len(cana1.geometry().asPolyline()) > 2:
-                    feedback.pushInfo('La canalisation {} contient un ou plusieurs sommet(s) intermédiaire(s).'.format(featCana.id()))
+                    feedback.pushWarning('La canalisation {} contient un ou plusieurs sommet(s) intermédiaire(s).'.format(featCana.id()))
                 canaNoeudAmont = QgsGeometry.fromPointXY(featCana.geometry().asPolyline()[0])
                 canaNoeudAval = QgsGeometry.fromPointXY(featCana.geometry().asPolyline()[-1])
             
@@ -138,10 +138,10 @@ class AssignationDesNoeudsAuxCanalisations(QgsProcessingAlgorithm):
             
             if len(requestAmont) != 1 or len(requestAval) != 1:
                 if len(requestAmont) != 1:
-                    feedback.pushInfo('{} noeud(s) trouvé(s) en amont de la canalisation {}. '.format(len(requestAmont), featCana.id()))
+                    feedback.pushWarning('{} noeud(s) trouvé(s) en amont de la canalisation {}. '.format(len(requestAmont), featCana.id()))
                     feedback.pushDebugInfo('requestAmont ids : ' + str(requestAmont))
                 if len(requestAval) != 1:
-                    feedback.pushInfo('{} noeud(s) trouvé(s) en aval de la canalisation {}. '.format(len(requestAval), featCana.id()))
+                    feedback.pushWarning('{} noeud(s) trouvé(s) en aval de la canalisation {}. '.format(len(requestAval), featCana.id()))
                     feedback.pushDebugInfo('requestAval ids : ' + str(requestAval))
                 warningMultipleNodes = True
                 featCana['Noeud_am'] = NULL
@@ -166,7 +166,7 @@ class AssignationDesNoeudsAuxCanalisations(QgsProcessingAlgorithm):
         layerCana.rollBack()
         
         if warningMultipleNodes:
-            feedback.reportError(
+            feedback.pushWarning(
             """
             Attention !
             
