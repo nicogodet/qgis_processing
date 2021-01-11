@@ -63,6 +63,17 @@ class MnslmaxV2(QgsProcessingAlgorithm):
             )
         )
         param = QgsProcessingParameterField(
+            "h_field",
+            "Champ d'hauteur d'eau",
+            type=QgsProcessingParameterField.Numeric,
+            parentLayerParameterName="pointsresultats",
+            allowMultiple=False,
+            defaultValue="HAUTEUR D'",
+        )
+        param.setFlags(param.flags() | QgsProcessingParameterDefinition.FlagAdvanced)
+        self.addParameter(param)
+        
+        param = QgsProcessingParameterField(
             "sl_field",
             "Champ de Surface Libre",
             type=QgsProcessingParameterField.Numeric,
@@ -92,7 +103,7 @@ class MnslmaxV2(QgsProcessingAlgorithm):
 
         # Extraire par attribut
         alg_params = {
-            "FIELD": "HAUTEUR D'",
+            "FIELD": parameters["h_field"],
             "INPUT": parameters["pointsresultats"],
             "OPERATOR": 3,
             "VALUE": parameters["hmin"],
