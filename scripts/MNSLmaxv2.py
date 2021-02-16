@@ -119,7 +119,7 @@ class MnslmaxV2(QgsProcessingAlgorithm):
 
         alg_params = {
             "DISCARD_NONMATCHING": False,
-            "FIELDS_TO_COPY": [str(parameters["sl_field"])],
+            "FIELDS_TO_COPY": [str(parameters["sl_field"])[:10]],
             "INPUT": parameters["pointsresultats"],
             "INPUT_2": outputs["ExtraireParAttribut"]["OUTPUT"],
             "MAX_DISTANCE": None,
