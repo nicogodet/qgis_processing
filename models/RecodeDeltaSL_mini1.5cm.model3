@@ -106,12 +106,12 @@
               <Option value="-0.05" type="QString"/>
               <Option value="4" type="QString"/>
               <Option value="-0.05" type="QString"/>
-              <Option value="-0.01" type="QString"/>
+              <Option value="-0.015" type="QString"/>
               <Option value="5" type="QString"/>
-              <Option value="-0.01" type="QString"/>
-              <Option value="0.01" type="QString"/>
+              <Option value="-0.015" type="QString"/>
+              <Option value="0.015" type="QString"/>
               <Option value="6" type="QString"/>
-              <Option value="0.01" type="QString"/>
+              <Option value="0.015" type="QString"/>
               <Option value="0.05" type="QString"/>
               <Option value="7" type="QString"/>
               <Option value="0.05" type="QString"/>
@@ -137,7 +137,7 @@
   <Option name="help"/>
   <Option name="modelVariables"/>
   <Option value="Reclassification" name="model_group" type="QString"/>
-  <Option value="RecodeDeltaSL mini 1cm" name="model_name" type="QString"/>
+  <Option value="RecodeDeltaSL mini 1.5cm" name="model_name" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="Raster" type="Map">
       <Option name="default" type="invalid"/>
