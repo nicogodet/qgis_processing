@@ -137,7 +137,7 @@ class Txt2asc(QgsProcessingAlgorithm):
         return "txt2tif"
 
     def displayName(self):
-        return "txt2tif"
+        return "Txt -> tif"
 
     def group(self):
         return "Interpolation"
