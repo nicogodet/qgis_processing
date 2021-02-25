@@ -187,7 +187,7 @@ class Shp2tif(QgsProcessingAlgorithm):
         return "shp2tif"
 
     def displayName(self):
-        return "shp2tif"
+        return "Shapefile -> tif"
 
     def group(self):
         return "Interpolation"
